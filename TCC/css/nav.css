@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
+/* HEADER */
+header {
+  background: rgb(119, 137, 135);
+}
+
+/* CONTAINER (ALINHA LOGO + MENU) */
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 🔥 alinhamento correto */
+}
+
+/* LOGO */
+.logo {
+  font-size: 65px;
+  color: rgb(122, 197, 218);
+  padding: 10px 0;
+}
+
+/* TÍTULO */
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+}
+
+/* NAVBAR */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center; 
+}
+
+nav ul li {
+  position: relative;
+}
+
+/* LINKS */
+nav ul li a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* HOVER */
+nav ul li a:hover {
+  color: #964b00;
+}
+
+/* LINHA ANIMADA */
+nav a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -5px;
+  height: 4px;
+  width: 0%;
+  background-color: #444;
+  transition: 0.3s;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.titulo-secao {
+  background-color: #3b2f4a;
+  color: beige;
+  text-align: center;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.titulo-secao h2 {
+  margin: 0;
+  font-size: 32px;
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+}
+
+/* MAIN */
+main {
+  padding: 0;
+}
+
+/* SECTION */
+section {
+  background-color: rgb(90, 118, 109);
+  color: antiquewhite;
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TEXTO */
+p {
+  padding: 2px;
+  max-width: 600px;
+  text-align: justify;
+  text-indent: 1.20em;
+}
+
+/* IMAGEM */
+.imagem img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+/* DIVISÃO */
+.arte-dividida {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* LADOS */
+.lado {
+  width: 45%;
+  color: white;
+}
+
+/* LINHA CENTRAL */
+.linha {
+  width: 2px;
+  background-color: white;
+}
+
+/* TÍTULOS */
+.lado h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.texto-imagem {
+  color: rgb(255, 255, 255);
+}
+
+.minha-imagem {
+  color: rgb(255, 255, 255);
+}
+
+.exemplos-home {
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  width: 70%;
+}
